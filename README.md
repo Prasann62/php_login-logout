@@ -1,110 +1,115 @@
-🏆 FPL Analizer
+# 🏆 FPL Analizer
 
-A simple, beginner-friendly Fantasy Premier League (FPL) web app built with PHP to help users explore basic FPL data, plan teams, and analyze performance. Includes authentication (login/logout), session handling, and starter tools for FPL stats and team planning.
+[![FPL](https://img.shields.io/badge/Fantasy-Premier%20League-38003c?style=for-the-badge&logo=premier-league&logoColor=white)](https://fantasy.premierleague.com/)
+[![PHP](https://img.shields.io/badge/PHP-7.4+-777bb4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 
-📌 Features
-
-✔️ User login & logout system (PHP + sessions)
-✔️ Dashboard after authentication
-✔️ FPL-related pages including:
-
-Team Analyzer
-
-Fixtures & Live Scores
-
-Player & Rank pages
-
-Price Change and Prediction pages
-
-Planner and AI helpers
-✔️ Basic UI components (navbar/sidebar)
-✔️ PHP backend API for dynamic data handling
-📁 Repository Structure
-├── index.php                 # Main entry / login redirect  
-├── loginform.php             # Login form  
-├── dashboard.php             # User dashboard  
-├── team-analyzer.php         # Team analysis tool  
-├── planner.php               # Team planner  
-├── fixtures.php              # Fixtures page  
-├── live-score.php            # Live scores  
-├── price-changes.php         # Price changes  
-├── players.php               # Player list & details  
-├── rank.php                  # Rankings  
-├── compare.php               # Team/player comparison  
-├── api.php                   # Backend API endpoints  
-├── style.css                 # Site styles  
-├── navbar.php / sidebar.php  # UI components  
-└── …                        # Other PHP & asset files  
-``` :contentReference[oaicite:3]{index=3}
+A comprehensive **Fantasy Premier League (FPL)** toolkit designed for serious managers. Built with PHP, this suite of tools provides live data tracking, AI-powered team optimization, and deep performance analysis.
 
 ---
 
-## 🚀 Getting Started
+## 📸 Screenshots
 
-These instructions will help you run the project locally.
-
-### 🛠 Prerequisites
-
-Make sure you have:
-
-- PHP 7.4 or higher  
-- Apache, Nginx, or any local server that can run PHP  
-- A modern web browser
-
-> Optional: a database (MySQL/MariaDB) if you extend authentication or dynamic data storage.
+![Premier League Header](pl.1.png)
+*Modern, clean UI focused on player data and team management.*
 
 ---
 
-### 📥 Installation
+## ✨ Key Features
 
-1. **Clone the repo**
+### 🤖 AI-Powered Assistants
+Dominate your league with advanced algorithms:
+- **AI Captain Advisor**: Data-driven captaincy recommendations.
+- **AI Team Picker**: Optimizes your squad for long-term returns.
+- **AI Wildcard & Free Hit Pickers**: Custom team builds for your biggest chips.
+- **AI Team Improver**: Suggests the best transfers to strengthen your squad.
+- **Point Predictor**: Forecasts player scores for upcoming Gameweeks.
+
+### 🛠 Team & Strategy Tools
+- **Live Dashboard**: Real-time points tracking and squad performance.
+- **Team Analyzer & Rating**: Evaluates your squad's strength and identifies weaknesses.
+- **Chip Strategy Planner**: Map out when to use your Wildcard, Triple Captain, and more.
+- **Transfer Planner**: Detailed transfer simulation and impact assessment.
+
+### 📊 Data & Insights
+- **Live Scores & Fixtures**: Real-time match updates and detailed FDR (Fixture Difficulty).
+- **Price Changes & Predictor**: Track player values and get ahead of the market.
+- **Expert Reveals**: See how top managers are setting up their squads.
+- **Player Comparison**: Side-by-side analysis of key FPL assets.
+
+### 🛡 Core Security
+- **Secure Authentication**: Robust login/logout system with session management.
+- **Advanced Security**: Integrated rate limiting, CSRF protection, and input sanitization.
+
+---
+
+## 💻 Tech Stack
+
+- **Backend**: PHP 7.4+
+- **Frontend**: Bootstrap 5, Vanilla CSS, Google Fonts (Outfit)
+- **Database**: MySQL / MariaDB
+- **Icons**: Bootstrap Icons
+- **APIs**: Official FPL API Integration
+
+---
+
+## 🚀 Installation Steps
+
+### 1. Prerequisites
+- **PHP 7.4** or higher
+- **MySQL/MariaDB**
+- **Web Server** (Apache/Nginx or PHP built-in server)
+
+### 2. Setup
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/Prasann62/fpl-analizer.git
    cd fpl-analizer
-2.Start the PHP server
+   ```
 
-php -S localhost:8000
-3.Open in browser
+2. **Configure Environment**:
+   - Create a `.env` file in the `config/` directory.
+   - Use `config/.env.example` as a template:
+     ```env
+     DB_HOST=localhost
+     DB_USERNAME=your_username
+     DB_PASSWORD=your_password
+     DB_NAME=your_db_name
+     ```
 
-http://localhost:8000
-4.Login / Signup
+3. **Initialize Database**:
+   - Create a new database in MySQL.
+   - Ensure your `.env` credentials match the created database.
 
-If a signup form exists, create an account
+4. **Run the Application**:
+   - If using the PHP built-in server:
+     ```bash
+     php -S localhost:8000
+     ```
+   - Open your browser and navigate to `http://localhost:8000`.
 
-Otherwise, ensure authentication data is seeded
+---
 
-🧠 How to Use
+## 🤝 Contributing
 
-Once logged in, explore the dashboard and available tools:
+Contributions are welcome! If you have suggestions or want to add a feature:
 
-Team Analyzer: Plan your squad and evaluate strength
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Fixtures: See upcoming match schedules
+---
 
-Live Scores: Watch real match outcomes
+## 📝 License
 
-Price Changes & Rank: Track player value changes or FPL rank
+Distributed under the MIT License. (Current repository state: No License).
 
-Planner & AI Helpers: Suggest changes, captain picks, predictions
+---
 
-Actual feature behavior depends on implementation of respective PHP files.
+## 📧 Contact
 
-🤝 Contributing
+**Prasanna Kumar** - Project Link [https://github.com/Prasann62/fpl-analizer](https://github.com/Prasann62/fpl-analizer)
 
-Contributions are welcome! Here are ways you can help:
-
-Add deeper FPL analysis (expected goals, xGI metrics)
-
-Improve UI/UX responsiveness
-
-Integrate with the official FPL API for real-time data
-
-Add tests and documentation
-
-📝 License
-
-i have no licence
-
-🧾 About
-
-A beginner-friendly PHP web project to start learning backend development while building useful tools for Fantasy Premier League data exploration.
+*Built with ❤️ for FPL fans everywhere.*
