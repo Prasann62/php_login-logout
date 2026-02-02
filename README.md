@@ -104,7 +104,7 @@ Contributions are welcome! If you have suggestions or want to add a feature:
 
 ## 📝 License
 
-Distributed under the MIT License. (Current repository state: No License).
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
